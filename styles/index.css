@@ -1,0 +1,55 @@
+body{
+    background-color: burlywood;
+    height: 90vh;
+    /* padding-top: 50%; */
+}
+.container{
+    top: 50px;
+    margin-left: 8%;
+    padding-left: 10%;
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    /* background-color: red; */
+}
+.fondo{
+    width: 70%;
+    position: absolute;
+    z-index: 0;
+}
+.frente{
+    width: 70%;
+    position: absolute;
+    z-index: 2;
+}
+.tapa{
+    width: 70%;
+    position: absolute;
+    z-index: 3;
+    animation: tapa-anim 2s 1s;
+    top: 0vh;
+}
+.sello{
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    left: 30%;
+    top: 40%;
+    z-index: 5;
+}
+.carta{
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20%;
+}
+@keyframes tapa-anim{
+    0%{
+    
+    }
+    100%{
+        transform: scaleY(-1);
+        translate: 0% -100%;
+    }
+}
