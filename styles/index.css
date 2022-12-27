@@ -1,49 +1,65 @@
-body{
+body {
     background-color: burlywood;
     height: 90vh;
     /* padding-top: 50%; */
 }
-.container{
-    top: 50px;
+
+.container {
     margin-left: 8%;
     padding-left: 10%;
+    padding-top: 6%;
     width: 80%;
-    height: 10px;
+    height: 90%;
     position: absolute;
     /* background-color: red; */
 }
-.fondo{
+
+.fondo {
     width: 70%;
     position: absolute;
     z-index: 0;
 }
-.frente{
+
+.frente {
     width: 70%;
     position: absolute;
     z-index: 2;
 }
-.tapa{
+
+.tapa {
     width: 70%;
     position: absolute;
     z-index: 3;
-    animation: tapa-anim 2s 1s;
-    top: 0vh;
+    /* animation: tapa-anim 2s 1s; */
+    margin-top: 0vh;
 }
-.sello{
+
+.sello {
     width: 10%;
     position: absolute;
     z-index: 2;
-    left: 30%;
-    top: 40%;
+    left: 41%;
+    margin-top: 17%;
     z-index: 5;
 }
-.carta{
+
+.carta {
     width: 30%;
     position: absolute;
     z-index: 1;
-    top: 20px;
-    left: 20%;
+    margin-top: 10px;
+    left: 31%;
 }
+.clickArea{
+    /* background-color: red; */
+    position: fixed;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 10;
+    cursor: pointer;
+}
+
 @keyframes tapa-anim{
     0%{
     
@@ -51,5 +67,15 @@ body{
     100%{
         transform: scaleY(-1);
         translate: 0% -100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container{
+        padding-top: 50%;
+        height: 40%;
+    }
+    .clickArea{
+        top: 10%;
     }
 }
